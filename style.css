@@ -1,0 +1,285 @@
+/* Font setup DO NOT TOUCH */
+.bruno-ace-sc-regular {
+  font-family: "Bruno Ace SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.play-regular {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.play-bold {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.form-intro {
+   text-align: center;
+   padding: 20px;
+   margin-top: 51px;
+}
+
+
+.googleform {
+   display: flex;
+   justify-content: center;
+}
+
+
+/* Text styles */
+body {
+    font-family: "Play", sans-serif;
+    background-color: #212529;
+    padding: 0%;
+    color: #DBD3D3;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Bruno Ace SC", Arial;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "Bruno Ace SC", Arial;
+}
+
+/* Navbar setup */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #0e1012;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+       
+ul.navbar li a {   
+    display: block;
+    color: #DBD3D3;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #23292e;
+    color: #4e5f91;
+}
+
+/* General / setup divs */
+.interiorCol {
+    display: flex;
+}
+
+.teamBox {
+    padding: 15px;
+    flex: 20%;
+}
+
+.iconImg {
+    border-radius: 50%;
+}
+
+/* Other divs */
+#intro {
+    padding: 150px 200px;
+    text-align: center;
+    background-image: url(city.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 375px;
+}
+
+#aboutUs {
+    text-align: center;
+    padding: 50px;
+}
+       
+.butt {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4e5f91;
+    color: #DBD3D3;
+    text-decoration: dashed;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+a.butt:hover {
+    background-color: #DBD3D3;
+    color: #4e5f91;
+}
+
+#centerBox {
+    padding-top: 51px;
+}
+
+/* Map page specific */
+.notice {
+    background-color: #4e5f91;
+    color: white;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 25%;
+    border-radius: 5px;
+    padding: 15px;
+    z-index: 90;
+}
+
+/* Map pins */
+.fas {
+    color: rgb(157, 39, 39);
+}
+.city {
+    text-decoration: none;
+    color: #DBD3D3;
+    background-color: #212529;
+    border-radius: 5px;
+    height: 10px;
+}
+
+/* Menu bar */
+#mapMenu {
+    position: fixed;
+    top: 65px;
+    left: 15px;
+    width: 30%;
+    background-color: #212529;
+    border-radius: 5%;
+    padding: 15px;
+    z-index: 90;
+}
+
+#heatMap {
+    display: none;
+}
+
+#popdensMap {
+    display: none;
+}
+
+.tablinks {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #4e5f91;
+    color: #DBD3D3;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+li.label {
+    width: 10%;
+} 
+
+.movemap {
+    position: relative;
+    z-index: 0;
+}
+
+.tabcontent {
+    margin-top: -260px;
+    width: 150vw;
+}
+
+/* point positions */
+li.liOne {
+    position: relative;
+    z-index: 1;
+    left: 1050px;
+    top: 900px;
+}
+
+li.liTwo {
+    position: relative;
+    z-index: 1;
+    left: 1280px;
+    top: 550px;
+}
+
+li.liThree {
+    position: relative;
+    z-index: 1;
+    left: 1520px;
+    top: 250px;
+}
+
+li.liFour {
+    position: relative;
+    z-index: 1;
+    left: 1400px;
+    top: 320px;
+}
+
+li.liFive {
+    position: relative;
+    z-index: 1;
+    left: 1325px;
+    top: 350px;
+}
+
+li.liSix {
+    position: relative;
+    z-index: 1;
+    left: 1600px;
+    top: 350px;
+}
+
+li.liSeven {
+    position: relative;
+    z-index: 1;
+    left: 1400px;
+    top: 320px;
+}
+
+
+/* Testing ground */
+/* div {
+    border: 1px solid red;
+} */
+
+/* PUT ALL YOUR CSS HERE + COMMENT IF YOU CAN!! */
+
+.flex {
+    display: flex;
+    padding: 15px;
+}
+
+.colone {
+    flex: 55%;
+    padding: 15px;
+}
+
+.coltwo {
+    flex: 45%;
+    padding: 15px;
+}
+
+.boxStyle {
+    border-radius: 5px;
+    background-color: #DBD3D3;
+    color: #212529;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.img {
+    width: 100%;
+}

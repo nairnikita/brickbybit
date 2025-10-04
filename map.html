@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Map - BrickbyBit</title>
+   <link rel="stylesheet" href="style.css">
+
+   <script src="https://kit.fontawesome.com/4a72510d80.js" crossorigin="anonymous"></script>
+
+   <!-- Font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Play:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="form.html">Form</a></li>
+   </ul>
+
+       <!-- City labels -->
+    <ul class="fa-ul">
+        <li class="label liOne"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><a href="details.html" class="city">Al Musaffah</a></li>
+        <li class="label liTwo"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><a href="details2.html" class="city">Al Quoz Industrial Area</a></li>
+        <li class="label liThree"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><a href="details3.html" class="city">Al Nakheel</a></li>
+        <li class="label liFour"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><a href="details4.html" class="city">Al Nuaimia</a></li>
+        <li class="label liFive"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><a href="details5.html" class="city">Sharjah Industrial Area 10</a></li>
+        <li class="label liSix"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><a href="details6.html" class="city">Al Hail</a></li>
+        <li class="label liSeven"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span><a href="details7.html" class="city">Al Salamah</a></li>
+    </ul>
+
+    <div class="notice">
+        For the purposes of this prototype, the map has been limited to a static image, and only seven coordinates are visible. Finalized versions would allow for free roam globally and infinite coordinates.
+    </div>
+
+    <div id="mapMenu">
+        Map functions:
+        <div class="tab">
+            <button class="tablinks" onclick="showMap(event, 'map')" id="defaultOpen">Regular</button>
+            <button class="tablinks" onclick="showMap(event, 'heatMap')">Temperature</button>
+            <button class="tablinks" onclick="showMap(event, 'popdensMap')">Population Density</button>
+        </div>
+    </div>
+
+    <script>
+function showMap(evt, mapType) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(mapType).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+window.onload = function() {
+  document.getElementById("defaultOpen").click();
+};
+</script>
+
+    <div class="tabcontent" id="map">
+       <img src="map.png" style="width: 150vw;" class="movemap">
+    </div>
+
+    <div class="tabcontent" id="heatMap">
+       <img src="map_heat.png" style="width: 150vw;" class="movemap">
+       <img src= "heat_bar.png" height="475px" style="position:fixed;top:155px;left:-50px;z-index: 80;">
+    </div>
+
+    <div class="tabcontent" id="popdensMap">
+       <img src="map_popdens.png" style="width: 150vw;" class="movemap">
+       <img src= "popdens_bar.png" height="475px" style="position:fixed;top:155px;left:15px;z-index: 80;">
+    </div>
+
+
+</body>
+</html>
